@@ -1,7 +1,7 @@
 import React from 'react';
 import logo from './logo.svg';
 import './App.css';
-
+/*
 function App() {
   return (
     <div className="App">
@@ -18,6 +18,21 @@ function App() {
         >
           Learn React
         </a>
+      </header>
+    </div>
+  );
+}
+*/
+
+function App() {
+  return (
+    <div className="App">
+      <header className="App-header">
+        <img src="https://cdn.discordapp.com/attachments/626217927858716674/887431019001688094/buffering.png" className="App-logo" alt="logo" />
+        <p>
+          This app is unfinished.
+        </p>
+        <p>Enjoy my confused face spinning slower than the default.</p>
       </header>
     </div>
   );
