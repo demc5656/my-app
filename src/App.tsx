@@ -32,7 +32,7 @@ function App() {
         <p>
           This app is unfinished.
         </p>
-        <p>Enjoy my confused face spinning slower than the default.</p>
+        <p>Enjoy my confused face spinning slightly slower than the default.</p>
       </header>
     </div>
   );
