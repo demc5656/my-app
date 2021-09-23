@@ -4,6 +4,8 @@ import App from './App';
 
 test('renders learn react link', () => {
   render(<App />);
-  const linkElement = screen.getByText(/unfinished/i);
-  expect(linkElement).toBeInTheDocument();
+  it ("should have unfinished on screen", () => {
+    const linkElement = screen.getByText(/unfinished/i);
+    expect(linkElement).toBeInTheDocument();
+});
 });
