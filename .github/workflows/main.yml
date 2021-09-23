@@ -40,10 +40,10 @@ jobs:
       run: |
         git config --global user.name Dara
         git config --global user.email mcnally@udel.edu
-        git remote set-url origin https://demc5656@github.com/demc5656/my-app
+        git remote set-url origin https://github.com/demc5656/my-app
         npm run deploy
       env:
         user_name: 'github-actions[bot]'
         user_email: 'github-actions[bot]@users.noreply.github.com'
-        github_token: ${{ secrets.problemChild }}
+        github_token: ${{ secrets.PROBLEMCHILD }}
         repository: ${{ github.repository }}
