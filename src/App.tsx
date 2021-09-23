@@ -48,7 +48,7 @@ function App(): JSX.Element {
     </div>*/
     <Row>
       <DiceViewer rolled100Value={now100} rolled20Value={now20} rolled12Value={now12} rolled10Value={now10} rolled8Value={now8} rolled6Value={now6} rolled4Value={now4}></DiceViewer>
-      <ControlPanel></ControlPanel>
+      <ControlPanel set100={setNow100} set20={setNow20} set12={setNow12} set10={setNow10} set8={setNow8} set6={setNow6} set4={setNow4}></ControlPanel>
     </Row>
   );
 }
