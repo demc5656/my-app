@@ -1,4 +1,4 @@
-import { Button, Col } from 'react-bootstrap';
+import { Button, Row} from 'react-bootstrap';
 //import { Die } from '../interfaces/die';
 import { roll } from '../utilities/data';
 import { useState } from 'react';
@@ -34,13 +34,13 @@ export function ControlPanel ({set100, set20, set12, set10, set8, set6, set4}:
     function setNow4() {
         set4(roll(4))
     }
-    return <>
-        <Col><Button data-testid="100-button" onClick={setNow100}>d100</Button></Col>
-        <Col><Button data-testid="20-button" onClick={setNow20}>d20</Button></Col>
-        <Col><Button data-testid="12-button" onClick={setNow12}>d12</Button></Col>
-        <Col><Button data-testid="10-button" onClick={setNow10}>d10</Button></Col>
-        <Col><Button data-testid="8-button" onClick={setNow8}>d8</Button></Col>
-        <Col><Button data-testid="6-button" onClick={setNow6}>d6</Button></Col>
-        <Col><Button data-testid="4-button" onClick={setNow4}>d4</Button></Col>
-    </>
+    return <Row>
+        <Button data-testid="100-button" onClick={setNow100}>d100</Button>
+        <Button data-testid="20-button" onClick={setNow20}>d20</Button>
+        <Button data-testid="12-button" onClick={setNow12}>d12</Button>
+        <Button data-testid="10-button" onClick={setNow10}>d10</Button>
+        <Button data-testid="8-button" onClick={setNow8}>d8</Button>
+        <Button data-testid="6-button" onClick={setNow6}>d6</Button>
+        <Button data-testid="4-button" onClick={setNow4}>d4</Button>
+        </Row>
 }
