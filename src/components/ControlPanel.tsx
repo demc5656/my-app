@@ -1,7 +1,7 @@
 import { Button, Row} from 'react-bootstrap';
 //import { Die } from '../interfaces/die';
 import { roll } from '../utilities/data';
-import { useState } from 'react';
+//import { useState } from 'react';
 
 export function ControlPanel ({set100, set20, set12, set10, set8, set6, set4}:
 {
