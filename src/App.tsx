@@ -29,7 +29,13 @@ function App() {
 */
 
 function App(): JSX.Element {
+  const [now100, setNow100] = useState<number>(0);
   const [now20, setNow20] = useState<number>(0);
+  const [now12, setNow12] = useState<number>(0);
+  const [now10, setNow10] = useState<number>(0);
+  const [now8, setNow8] = useState<number>(0);
+  const [now6, setNow6] = useState<number>(0);
+  const [now4, setNow4] = useState<number>(0);
   return (
     /*<div className="App">
       <header className="App-header">
@@ -41,7 +47,7 @@ function App(): JSX.Element {
       </header>
     </div>*/
     <Row>
-      <DiceViewer></DiceViewer>
+      <DiceViewer rolled100Value={now100} rolled20Value={now20} rolled12Value={now12} rolled10Value={now10} rolled8Value={now8} rolled6Value={now6} rolled4Value={now4}></DiceViewer>
       <ControlPanel></ControlPanel>
     </Row>
   );
