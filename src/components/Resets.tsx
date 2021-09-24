@@ -38,5 +38,6 @@ export function Resets ({set100, set20, set12, set10, set8, set6, set4}: {
         <Col><Button data-testid="reset-8-button" onClick={setNow8} className="m-2">Reset d8</Button></Col>
         <Col><Button data-testid="reset-6-button" onClick={setNow6} className="m-2">Reset d6</Button></Col>
         <Col><Button data-testid="reset-4-button" onClick={setNow4} className="m-2">Reset d4</Button></Col>
+        <Col><Button data-testid="reset-main-button" onClick={() => {setNow100(); setNow20(); setNow12(); setNow10(); setNow8(); setNow6(); setNow4();}} className="m-2">Reset All</Button></Col>
     </Row>
 }
