@@ -5,7 +5,8 @@ import { DiceViewer } from './components/DiceViewer';
 import { Row, Container } from 'react-bootstrap';
 import { ControlPanel } from './components/ControlPanel';
 import "bootstrap/dist/css/bootstrap.min.css";
-//import { Resets } from './components/Resets';
+import { Resets } from './components/Resets';
+import { ResetAll } from './components/ResetAll';
 
 /*
 function App() {
@@ -54,6 +55,8 @@ function App(): JSX.Element {
       <Row>
       <DiceViewer rolled100Value={now100} rolled20Value={now20} rolled12Value={now12} rolled10Value={now10} rolled8Value={now8} rolled6Value={now6} rolled4Value={now4}></DiceViewer>
       <ControlPanel set100={setNow100} set20={setNow20} set12={setNow12} set10={setNow10} set8={setNow8} set6={setNow6} set4={setNow4}></ControlPanel>
+      <Resets set100={setNow100} set20={setNow20} set12={setNow12} set10={setNow10} set8={setNow8} set6={setNow6} set4={setNow4}></Resets>
+      <ResetAll set100={setNow100} set20={setNow20} set12={setNow12} set10={setNow10} set8={setNow8} set6={setNow6} set4={setNow4}></ResetAll>
       </Row>
     </Container>
   );
