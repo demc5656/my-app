@@ -65,7 +65,7 @@ function App(): JSX.Element {
       <ControlPanel total100Value={total100} total20Value={total20} total12Value={total12} total10Value={total10} total8Value={total8} total6Value={total6} total4Value={total4} set100={setNow100} set20={setNow20} set12={setNow12} set10={setNow10} set8={setNow8} set6={setNow6} set4={setNow4} get100={setTotal100} get20={setTotal20} get12={setTotal12} get10={setTotal10} get8={setTotal8} get6={setTotal6} get4={setTotal4}></ControlPanel>
       <Resets set100={setNow100} set20={setNow20} set12={setNow12} set10={setNow10} set8={setNow8} set6={setNow6} set4={setNow4}></Resets>
       <TotalViewer total100Value={total100} total20Value={total20} total12Value={total12} total10Value={total10} total8Value={total8} total6Value={total6} total4Value={total4}></TotalViewer>
-      <ResetAll set100={setNow100} set20={setNow20} set12={setNow12} set10={setNow10} set8={setNow8} set6={setNow6} set4={setNow4}></ResetAll>
+      <ResetAll set100={setNow100} set20={setNow20} set12={setNow12} set10={setNow10} set8={setNow8} set6={setNow6} set4={setNow4} get100={setTotal100} get20={setTotal20} get12={setTotal12} get10={setTotal10} get8={setTotal8} get6={setTotal6} get4={setTotal4}></ResetAll>
       </Row>
     </Container>
   );
