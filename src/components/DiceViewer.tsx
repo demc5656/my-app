@@ -10,12 +10,12 @@ export function DiceViewer ({rolled100Value, rolled20Value, rolled12Value, rolle
     rolled4Value: number
 }   ): JSX.Element {
     return <Row>
-        <strong>{rolled100Value}</strong>
-        <strong>{rolled20Value}</strong>
-        <strong>{rolled12Value}</strong>
-        <strong>{rolled10Value}</strong>
-        <strong>{rolled8Value}</strong>
-        <strong>{rolled6Value}</strong>
+        <strong>{rolled100Value}</strong>  
+        <strong>{rolled20Value}</strong>  
+        <strong>{rolled12Value}</strong>  
+        <strong>{rolled10Value}</strong>  
+        <strong>{rolled8Value}</strong>  
+        <strong>{rolled6Value}</strong>  
         <strong>{rolled4Value}</strong>
     </Row>
 }

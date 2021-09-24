@@ -35,12 +35,12 @@ export function ControlPanel ({set100, set20, set12, set10, set8, set6, set4}:
         set4(roll(4))
     }
     return <Row>
-        <Button data-testid="100-button" onClick={setNow100}>d100</Button>
-        <Button data-testid="20-button" onClick={setNow20}>d20</Button>
-        <Button data-testid="12-button" onClick={setNow12}>d12</Button>
-        <Button data-testid="10-button" onClick={setNow10}>d10</Button>
-        <Button data-testid="8-button" onClick={setNow8}>d8</Button>
-        <Button data-testid="6-button" onClick={setNow6}>d6</Button>
-        <Button data-testid="4-button" onClick={setNow4}>d4</Button>
+        <Button data-testid="100-button" onClick={setNow100} className="m-2">d100</Button>
+        <Button data-testid="20-button" onClick={setNow20} className="m-2">d20</Button>
+        <Button data-testid="12-button" onClick={setNow12} className="m-2">d12</Button>
+        <Button data-testid="10-button" onClick={setNow10} className="m-2">d10</Button>
+        <Button data-testid="8-button" onClick={setNow8} className="m-2">d8</Button>
+        <Button data-testid="6-button" onClick={setNow6} className="m-2">d6</Button>
+        <Button data-testid="4-button" onClick={setNow4} className="m-2">d4</Button>
         </Row>
 }
