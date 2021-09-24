@@ -1,4 +1,4 @@
-import { Button, Row } from "react-bootstrap";
+import { Button } from "react-bootstrap";
 
 export function ResetAll ({set100, set20, set12, set10, set8, set6, set4}: {
     set100: (num100: number) => void,
@@ -30,7 +30,5 @@ export function ResetAll ({set100, set20, set12, set10, set8, set6, set4}: {
     function setNow4() {
         set4(0)
     }
-    return <Row>
-        <Button data-testid="reset-all-button" onClick={() => {setNow100(); setNow20(); setNow12(); setNow10(); setNow8(); setNow6(); setNow4();}}>Reset All</Button>
-    </Row>
+    return <Button data-testid="reset-all-button" onClick={() => {setNow100(); setNow20(); setNow12(); setNow10(); setNow8(); setNow6(); setNow4();}}>Reset All</Button>
 }
