@@ -1,6 +1,6 @@
 import { Button, Row, Col } from "react-bootstrap";
 
-export function Resets ({set100, set20, set12, set10, set8, set6, set4}: {
+export function ResetAll ({set100, set20, set12, set10, set8, set6, set4}: {
     set100: (num100: number) => void,
     set20: (num20: number) => void,
     set12: (num12: number) => void,
