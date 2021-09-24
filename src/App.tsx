@@ -5,6 +5,7 @@ import { DiceViewer } from './components/DiceViewer';
 import { Row, Container } from 'react-bootstrap';
 import { ControlPanel } from './components/ControlPanel';
 import "bootstrap/dist/css/bootstrap.min.css";
+//import { Resets } from './components/Resets';
 
 /*
 function App() {
@@ -37,6 +38,7 @@ function App(): JSX.Element {
   const [now8, setNow8] = useState<number>(0);
   const [now6, setNow6] = useState<number>(0);
   const [now4, setNow4] = useState<number>(0);
+
   return (
     /*<div className="App">
       <header className="App-header">

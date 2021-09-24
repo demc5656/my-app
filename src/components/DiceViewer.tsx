@@ -1,4 +1,5 @@
 import { Row, Col } from "react-bootstrap";
+//import { useState } from "react";
 
 export function DiceViewer ({rolled100Value, rolled20Value, rolled12Value, rolled10Value, rolled8Value, rolled6Value, rolled4Value}: {
     rolled100Value: number,
@@ -9,6 +10,7 @@ export function DiceViewer ({rolled100Value, rolled20Value, rolled12Value, rolle
     rolled6Value: number,
     rolled4Value: number
 }   ): JSX.Element {
+    //const [zero100, reset100] = useState<number()
     return <Row>
         <Col><strong>{rolled100Value}</strong></Col>
         <Col><strong>{rolled20Value}</strong></Col>
