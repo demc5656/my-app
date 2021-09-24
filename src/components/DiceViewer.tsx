@@ -16,6 +16,6 @@ export function DiceViewer ({rolled100Value, rolled20Value, rolled12Value, rolle
         <Col><strong>{rolled10Value}</strong></Col>
         <Col><strong>{rolled8Value}</strong></Col>
         <Col><strong>{rolled6Value}</strong></Col>
-        <Col><strong>{rolled4Value}</strong>
+        <Col><strong>{rolled4Value}</strong></Col>
     </Row>
 }
