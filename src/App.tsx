@@ -2,8 +2,9 @@ import React, { useState } from 'react';
 //import logo from './logo.svg';
 import './App.css';
 import { DiceViewer } from './components/DiceViewer';
-import { Row } from 'react-bootstrap';
+import { Row, Col, Container } from 'react-bootstrap';
 import { ControlPanel } from './components/ControlPanel';
+import "bootstrap/dist/css/bootstrap.min.css";
 
 /*
 function App() {
@@ -45,11 +46,14 @@ function App(): JSX.Element {
         </p>
         <p>Enjoy my confused face spinning slightly slower than the default.</p>
       </header>
+      
     </div>*/
-    <Row>
+    <Container>
+      <Row>
       <DiceViewer rolled100Value={now100} rolled20Value={now20} rolled12Value={now12} rolled10Value={now10} rolled8Value={now8} rolled6Value={now6} rolled4Value={now4}></DiceViewer>
       <ControlPanel set100={setNow100} set20={setNow20} set12={setNow12} set10={setNow10} set8={setNow8} set6={setNow6} set4={setNow4}></ControlPanel>
-    </Row>
+      </Row>
+    </Container>
   );
 }
 
