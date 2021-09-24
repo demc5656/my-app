@@ -25,7 +25,7 @@ export function ControlPanel ({total100Value, total20Value, total12Value, total1
     get10: (num10: number) => void,
     get8: (num8: number) => void,
     get6: (num6: number) => void,
-    get4: (num4: number) => void,
+    get4: (num4: number) => void
 }): JSX.Element {
     function setNow100() {
         const temp100 = roll(100);
@@ -34,33 +34,33 @@ export function ControlPanel ({total100Value, total20Value, total12Value, total1
     }
     function setNow20() {
         const temp20 = roll(20);
-        set100(temp20)
-        get100(temp20+total20Value)
+        set20(temp20)
+        get20(temp20+total20Value)
     }
     function setNow12() {
         const temp12 = roll(12);
-        set100(temp12)
-        get100(temp12+total12Value)
+        set12(temp12)
+        get12(temp12+total12Value)
     }
     function setNow10() {
         const temp10 = roll(10);
-        set100(temp10)
-        get100(temp10+total10Value)
+        set10(temp10)
+        get10(temp10+total10Value)
     }
     function setNow8() {
         const temp8 = roll(8);
-        set100(temp8)
-        get100(temp8+total8Value)
+        set8(temp8)
+        get8(temp8+total8Value)
     }
     function setNow6() {
         const temp6 = roll(6);
-        set100(temp6)
-        get100(temp6+total6Value)
+        set6(temp6)
+        get6(temp6+total6Value)
     }
     function setNow4() {
         const temp4 = roll(4);
-        set100(temp4)
-        get100(temp4+total4Value)
+        set4(temp4)
+        get4(temp4+total4Value)
     }
     return <Row>
         <Col><Button data-testid="100-button" onClick={setNow100} className="m-2">d100</Button></Col>
