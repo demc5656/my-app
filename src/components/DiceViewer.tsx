@@ -1,4 +1,4 @@
-import { Row } from "react-bootstrap";
+import { Row, Col } from "react-bootstrap";
 
 export function DiceViewer ({rolled100Value, rolled20Value, rolled12Value, rolled10Value, rolled8Value, rolled6Value, rolled4Value}: {
     rolled100Value: number,
@@ -10,12 +10,12 @@ export function DiceViewer ({rolled100Value, rolled20Value, rolled12Value, rolle
     rolled4Value: number
 }   ): JSX.Element {
     return <Row>
-        <strong>{rolled100Value}</strong>  
-        <strong>{rolled20Value}</strong>  
-        <strong>{rolled12Value}</strong>  
-        <strong>{rolled10Value}</strong>  
-        <strong>{rolled8Value}</strong>  
-        <strong>{rolled6Value}</strong>  
-        <strong>{rolled4Value}</strong>
+        <Col><strong>{rolled100Value}</strong></Col>
+        <Col><strong>{rolled20Value}</strong></Col>
+        <Col><strong>{rolled12Value}</strong></Col>
+        <Col><strong>{rolled10Value}</strong></Col>
+        <Col><strong>{rolled8Value}</strong></Col>
+        <Col><strong>{rolled6Value}</strong></Col>
+        <Col><strong>{rolled4Value}</strong>
     </Row>
 }
