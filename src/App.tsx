@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 //import logo from './logo.svg';
 import './App.css';
 import { DiceViewer } from './components/DiceViewer';
-import { Row, Col, Container } from 'react-bootstrap';
+import { Row, Container } from 'react-bootstrap';
 import { ControlPanel } from './components/ControlPanel';
 import "bootstrap/dist/css/bootstrap.min.css";
 
