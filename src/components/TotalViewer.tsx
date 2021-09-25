@@ -10,6 +10,7 @@ export function TotalViewer ({total100Value, total20Value, total12Value, total10
     total6Value: number,
     total4Value: number
 }   ): JSX.Element {
+    const temp = total100Value+total20Value+total12Value+total10Value+total8Value+total6Value+total4Value;
     //const [zero100, reset100] = useState<number()
     return <Row>
         <Col><strong>{total100Value}</strong></Col>
@@ -19,5 +20,6 @@ export function TotalViewer ({total100Value, total20Value, total12Value, total10
         <Col><strong>{total8Value}</strong></Col>
         <Col><strong>{total6Value}</strong></Col>
         <Col><strong>{total4Value}</strong></Col>
+        <Row><strong>{temp}</strong></Row>
     </Row>
 }
