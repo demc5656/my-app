@@ -60,13 +60,13 @@ export function ResetAll ({set100, set20, set12, set10, set8, set6, set4, get100
     }
     return <Row>
         <Row>
-        <Col><Button data-testid="reset-total-100-button" onClick={setTotal100} className="m-2">Reset Total</Button></Col>
-        <Col><Button data-testid="reset-total-20-button" onClick={setTotal20} className="m-2">Reset Total</Button></Col>
-        <Col><Button data-testid="reset-total-12-button" onClick={setTotal12} className="m-2">Reset Total</Button></Col>
-        <Col><Button data-testid="reset-total-10-button" onClick={setTotal10} className="m-2">Reset Total</Button></Col>
-        <Col><Button data-testid="reset-total-8-button" onClick={setTotal8} className="m-2">Reset Total</Button></Col>
-        <Col><Button data-testid="reset-total-6-button" onClick={setTotal6} className="m-2">Reset Total</Button></Col>
-        <Col><Button data-testid="reset-total-4-button" onClick={setTotal4} className="m-2">Reset Total</Button></Col>
+        <Col><Button data-testid="reset-total-100-button" onClick={setTotal100} className="m-2">Reset d100 Total</Button></Col>
+        <Col><Button data-testid="reset-total-20-button" onClick={setTotal20} className="m-2">Reset d20 Total</Button></Col>
+        <Col><Button data-testid="reset-total-12-button" onClick={setTotal12} className="m-2">Reset d12 Total</Button></Col>
+        <Col><Button data-testid="reset-total-10-button" onClick={setTotal10} className="m-2">Reset d10 Total</Button></Col>
+        <Col><Button data-testid="reset-total-8-button" onClick={setTotal8} className="m-2">Reset d8 Total</Button></Col>
+        <Col><Button data-testid="reset-total-6-button" onClick={setTotal6} className="m-2">Reset d6 Total</Button></Col>
+        <Col><Button data-testid="reset-total-4-button" onClick={setTotal4} className="m-2">Reset d4 Total</Button></Col>
         </Row>
         <Row><Button data-testid="reset-all-button" onClick={() => {setNow100(); setNow20(); setNow12(); setNow10(); setNow8(); setNow6(); setNow4(); setTotal100(); setTotal20(); setTotal12(); setTotal10(); setTotal8(); setTotal6(); setTotal4();}}>Reset All</Button></Row>
     </Row>
