@@ -13,7 +13,7 @@ export function DiceViewer ({rolled100Value, rolled20Value, rolled12Value, rolle
     //const [zero100, reset100] = useState<number()
     return <Row>
         <Col><strong data-testid="100">{rolled100Value}</strong></Col>
-        <Col><strong data-testid="200">{rolled20Value}</strong></Col>
+        <Col><strong data-testid="20">{rolled20Value}</strong></Col>
         <Col><strong data-testid="12">{rolled12Value}</strong></Col>
         <Col><strong data-testid="10">{rolled10Value}</strong></Col>
         <Col><strong data-testid="8">{rolled8Value}</strong></Col>
