@@ -12,12 +12,12 @@ export function DiceViewer ({rolled100Value, rolled20Value, rolled12Value, rolle
 }   ): JSX.Element {
     //const [zero100, reset100] = useState<number()
     return <Row>
-        <Col><strong data-testid="100">{rolled100Value}</strong></Col>
-        <Col><strong data-testid="20">{rolled20Value}</strong></Col>
-        <Col><strong data-testid="12">{rolled12Value}</strong></Col>
-        <Col><strong data-testid="10">{rolled10Value}</strong></Col>
-        <Col><strong data-testid="8">{rolled8Value}</strong></Col>
-        <Col><strong data-testid="6">{rolled6Value}</strong></Col>
-        <Col><strong data-testid="4">{rolled4Value}</strong></Col>
+        <Col><h3 className="text-center" data-testid="100">{rolled100Value}</h3></Col>
+        <Col><h3 className="text-center" data-testid="20">{rolled20Value}</h3></Col>
+        <Col><h3 className="text-center" data-testid="12">{rolled12Value}</h3></Col>
+        <Col><h3 className="text-center" data-testid="10">{rolled10Value}</h3></Col>
+        <Col><h3 className="text-center" data-testid="8">{rolled8Value}</h3></Col>
+        <Col><h3 className="text-center" data-testid="6">{rolled6Value}</h3></Col>
+        <Col><h3 className="text-center" data-testid="4">{rolled4Value}</h3></Col>
     </Row>
 }
