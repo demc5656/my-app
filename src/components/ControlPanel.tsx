@@ -1,7 +1,7 @@
 import { Button, Row, Col} from 'react-bootstrap';
 //import { Die } from '../interfaces/die';
 import { roll } from '../utilities/data';
-import { useState } from 'react';
+//import { useState } from 'react';
 //import { HowMany } from './HowMany';
 
 // Textbox stuff learned from: https://getbootstrap.com/docs/4.0/components/input-group/
@@ -31,15 +31,29 @@ export function ControlPanel ({total100Value, total20Value, total12Value, total1
     get6: (num6: number) => void,
     get4: (num4: number) => void
 }): JSX.Element {
-    const [num100, setNum100] = useState<number>(1);
-    const [num20, setNum20] = useState<number>(1);
-    const [num12, setNum12] = useState<number>(1);
-    const [num10, setNum10] = useState<number>(1);
-    const [num8, setNum8] = useState<number>(1);
-    const [num6, setNum6] = useState<number>(1);
-    const [num4, setNum4] = useState<number>(1);
+    //const [num100, setNum100] = useState<number>(1);
+    //const [num20, setNum20] = useState<number>(1);
+    //const [num12, setNum12] = useState<number>(1);
+    //const [num10, setNum10] = useState<number>(1);
+    //const [num8, setNum8] = useState<number>(1);
+    //const [num6, setNum6] = useState<number>(1);
+    //const [num4, setNum4] = useState<number>(1);
+
+    //const num100 = 1;
+    //const num20 = 1;
+    //const num12 = 1;
+    //const num10 = 1;
+    //const num8 = 1;
+    //const num6 = 1;
+    //const num4 = 1;
 
     function setNow100() {
+        var num100 = document.getElementById("num100");
+        if (num100==null || num100<1) {
+            const temp100 = roll(100);
+            set100(temp100)
+            get100(temp100+total100Value)
+        }
         for (let i=0; i<num100; i++) {
             const temp100 = roll(100);
             set100(temp100)
