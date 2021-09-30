@@ -90,61 +90,67 @@ export function ControlPanel ({total100Value, total20Value, total12Value, total1
     }
     return <Row>
         <Col>
-            <div className="input-group-prepend">
-                <span className="input-group-text">How many d100s?</span>
-                <input id="num100" type="number" placeholder="1" ></input>
+            <div className="input-group mb-1">
+                <div className="input-group-prepend">
+                    <span className="input-group-text" id="number100">d100</span>
+                </div>
+                <input id="num100" type="number" placeholder="1" aria-label="number100" aria-describedby="number100" className="form-control"></input>
             </div>
             <Button data-testid="100-button" onClick={setNow100} className="m-2">d100</Button>
         </Col>
         <Col>
-            <div className="input-group-prepend">
-                <span className="input-group-text" id="basic-addon3">How many d20s?</span>
-                <input id="num20" type="number" placeholder="1" ></input>
+            <div className="input-group mb-1">
+                <div className="input-group-prepend">
+                    <span className="input-group-text" id="number20">d20</span>
+                </div>
+                <input id="num20" type="number" placeholder="1" aria-label="number20" aria-describedby="number20" className="form-control"></input>
             </div>
             <Button data-testid="20-button" onClick={setNow20} className="m-2">d20</Button>
         </Col>
         <Col>
-            <div className="input-group-prepend">
-                <span className="input-group-text" id="basic-addon3">How many d12s?</span>
-                <input id="num12" type="number" placeholder="1" ></input>
+            <div className="input-group mb-1">
+                <div className="input-group-prepend">
+                    <span className="input-group-text" id="number12">d12</span>
+                </div>
+                <input id="num12" type="number" placeholder="1" aria-label="number12" aria-describedby="number12" className="form-control"></input>
             </div>
             <Button data-testid="12-button" onClick={setNow12} className="m-2">d12</Button>
         </Col>
         <Col>
-            <Row>
+            <div className="input-group mb-1">
                 <div className="input-group-prepend">
-                    <span className="input-group-text">How many d10s?</span>
-                    <input id="num10" type="number" placeholder="1" ></input>
+                    <span className="input-group-text" id="number10">d10</span>
                 </div>
-            </Row>
-            <Row><Button data-testid="10-button" onClick={setNow10} className="m-2">d10</Button></Row>
+                <input id="num10" type="number" placeholder="1" aria-label="number10" aria-describedby="number10" className="form-control"></input>
+            </div>
+            <Button data-testid="10-button" onClick={setNow10} className="m-2">d10</Button>
         </Col>
         <Col>
-            <Row>
+            <div className="input-group mb-1">
                 <div className="input-group-prepend">
-                    <span className="input-group-text">How many d8s?</span>
-                    <input id="num8" type="number" placeholder="1" ></input>
+                    <span className="input-group-text" id="number8">d8</span>
                 </div>
-            </Row>
-            <Row><Button data-testid="8-button" onClick={setNow8} className="m-2">d8</Button></Row>
+                <input id="num8" type="number" placeholder="1" aria-label="number8" aria-describedby="number8" className="form-control"></input>
+            </div>
+            <Button data-testid="8-button" onClick={setNow8} className="m-2">d8</Button>
         </Col>
         <Col>
-            <Row>
+            <div className="input-group mb-1">
                 <div className="input-group-prepend">
-                    <span className="input-group-text" id="basic-addon3">How many d6s?</span>
-                    <input id="num6" type="number" placeholder="1" ></input>
+                    <span className="input-group-text" id="number6">d6</span>
                 </div>
-            </Row>
-            <Row><Button data-testid="6-button" onClick={setNow6} className="m-2">d6</Button></Row>
+                <input id="num6" type="number" placeholder="1" aria-label="number6" aria-describedby="number6" className="form-control"></input>
+            </div>
+            <Button data-testid="6-button" onClick={setNow6} className="m-2">d6</Button>
         </Col>
         <Col>
-            <Row>
+            <div className="input-group mb-1">
                 <div className="input-group-prepend">
-                    <span className="input-group-text" id="basic-addon3">How many d4s?</span>
-                    <input id="num4" type="number" placeholder="1" ></input>
+                    <span className="input-group-text" id="number4">d4</span>
                 </div>
-            </Row>
-            <Row><Button data-testid="4-button" onClick={setNow4} className="m-2">d4</Button></Row>
+                <input id="num4" type="number" placeholder="1" aria-label="number4" aria-describedby="number4" className="form-control"></input>
+            </div>
+            <Button data-testid="4-button" onClick={setNow4} className="m-2">d4</Button>
         </Col>
     </Row>
 }
