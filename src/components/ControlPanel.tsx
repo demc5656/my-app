@@ -80,8 +80,8 @@ export function ControlPanel ({total100Value, total20Value, total12Value, total1
             tempTotal100 = tempTotal100 + rollHold100;
         }
         const temp100 = rollHold100;
-        set4(temp100)
-        get4(tempTotal100+total100Value)
+        set100(temp100)
+        get100(tempTotal100+total100Value)
     }
     function setNow20() {
         /*
@@ -100,8 +100,8 @@ export function ControlPanel ({total100Value, total20Value, total12Value, total1
             tempTotal20 = tempTotal20 + rollHold20;
         }
         const temp20 = rollHold20;
-        set4(temp20)
-        get4(tempTotal20+total20Value)
+        set20(temp20)
+        get20(tempTotal20+total20Value)
     }
     function setNow12() {
         /*
@@ -120,8 +120,8 @@ export function ControlPanel ({total100Value, total20Value, total12Value, total1
             tempTotal12 = tempTotal12 + rollHold12;
         }
         const temp12 = rollHold12;
-        set4(temp12)
-        get4(tempTotal12+total12Value)
+        set12(temp12)
+        get12(tempTotal12+total12Value)
     }
     function setNow10() {
         /*
@@ -140,8 +140,8 @@ export function ControlPanel ({total100Value, total20Value, total12Value, total1
             tempTotal10 = tempTotal10 + rollHold10;
         }
         const temp10 = rollHold10;
-        set4(temp10)
-        get4(tempTotal10+total10Value)
+        set10(temp10)
+        get10(tempTotal10+total10Value)
     }
     function setNow8() { /*
         const temp = document.getElementById("num8")?.textContent;
@@ -159,8 +159,8 @@ export function ControlPanel ({total100Value, total20Value, total12Value, total1
             tempTotal8 = tempTotal8 + rollHold8;
         }
         const temp8 = rollHold8;
-        set4(temp8)
-        get4(tempTotal8+total8Value)
+        set8(temp8)
+        get8(tempTotal8+total8Value)
     }
     function setNow6() {
         /*
@@ -179,8 +179,8 @@ export function ControlPanel ({total100Value, total20Value, total12Value, total1
             tempTotal6 = tempTotal6 + rollHold6;
         }
         const temp6 = rollHold6;
-        set4(temp6)
-        get4(tempTotal6+total6Value)
+        set6(temp6)
+        get6(tempTotal6+total6Value)
     }
     function setNow4() {
         //const temp = document.getElementById("num4")?.textContent;
