@@ -40,6 +40,7 @@ function App(): JSX.Element {
   const [now8, setNow8] = useState<number>(0);
   const [now6, setNow6] = useState<number>(0);
   const [now4, setNow4] = useState<number>(0);
+
   const [total100, setTotal100] = useState<number>(0);
   const [total20, setTotal20] = useState<number>(0);
   const [total12, setTotal12] = useState<number>(0);
