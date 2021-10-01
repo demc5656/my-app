@@ -58,10 +58,6 @@ export function ControlPanel ({total100Value, total20Value, total12Value, total1
         }
     }
 
-    function number100() {
-
-    }
-
     function setNow100() {
         //const temp = document.getElementById("num100")?.textContent;
         //const num100 = getNumber(temp, 1);
@@ -70,47 +66,101 @@ export function ControlPanel ({total100Value, total20Value, total12Value, total1
             //set100(temp100)
             //get100(temp100+total100Value)
         //}
+        /*
         for (let i=0; i<num100; i++) {
             const temp100 = roll(100);
             set100(temp100)
             get100(temp100+total100Value)
+        }*/
+        const temp = getNumber(num100, 1);
+        let tempTotal = 0;
+        let rollHold =  0;
+        for (let i=0; i<temp; i++) {
+            rollHold = roll(100);
+            tempTotal = tempTotal + rollHold;
         }
+        const temp100 = rollHold;
+        set4(temp100)
+        get4(tempTotal+total100Value)
     }
     function setNow20() {
+        /*
         const temp = document.getElementById("num20")?.textContent;
         const num20 = getNumber(temp, 1);
         for (let i=0; i<num20; i++) {
             const temp20 = roll(20);
             set20(temp20)
             get20(temp20+total20Value)
+        }*/
+        const temp = getNumber(num20, 1);
+        let tempTotal = 0;
+        let rollHold =  0;
+        for (let i=0; i<temp; i++) {
+            rollHold = roll(20);
+            tempTotal = tempTotal + rollHold;
         }
+        const temp20 = rollHold;
+        set4(temp20)
+        get4(tempTotal+total20Value)
     }
     function setNow12() {
+        /*
         const temp = document.getElementById("num12")?.textContent;
         const num12 = getNumber(temp, 1);
         for (let i=0; i<num12; i++) {
             const temp12 = roll(12);
             set12(temp12)
             get12(temp12+total12Value)
+        }*/
+        const temp = getNumber(num12, 1);
+        let tempTotal = 0;
+        let rollHold =  0;
+        for (let i=0; i<temp; i++) {
+            rollHold = roll(12);
+            tempTotal = tempTotal + rollHold;
         }
+        const temp12 = rollHold;
+        set4(temp12)
+        get4(tempTotal+total12Value)
     }
     function setNow10() {
+        /*
         const temp = document.getElementById("num10")?.textContent;
         const num10 = getNumber(temp, 1);
         for (let i=0; i<num10; i++) {
             const temp10 = roll(10);
             set10(temp10)
             get10(temp10+total10Value)
+        }*/
+        const temp = getNumber(num10, 1);
+        let tempTotal = 0;
+        let rollHold =  0;
+        for (let i=0; i<temp; i++) {
+            rollHold = roll(10);
+            tempTotal = tempTotal + rollHold;
         }
+        const temp10 = rollHold;
+        set4(temp10)
+        get4(tempTotal+total10Value)
     }
-    function setNow8() {
+    function setNow8() { /*
         const temp = document.getElementById("num8")?.textContent;
         const num8 = getNumber(temp, 1);
         for (let i=0; i<num8; i++) {
             const temp8 = roll(8);
             set8(temp8)
             get8(temp8+total8Value)
+        }*/
+        const temp = getNumber(num8, 1);
+        let tempTotal = 0;
+        let rollHold =  0;
+        for (let i=0; i<temp; i++) {
+            rollHold = roll(8);
+            tempTotal = tempTotal + rollHold;
         }
+        const temp8 = rollHold;
+        set4(temp8)
+        get4(tempTotal+total8Value)
     }
     function setNow6() {
         /*
@@ -151,7 +201,7 @@ export function ControlPanel ({total100Value, total20Value, total12Value, total1
                 <div className="input-group-prepend">
                     <span className="input-group-text" id="number100">d100</span>
                 </div>
-                <input id="num100" type="text" placeholder="1" aria-label="number100" aria-describedby="number100" className="form-control"></input>
+                <input id="num100" type="text" placeholder="1" aria-label="number100" aria-describedby="number100" className="form-control" onChange={(event) => setNum100(event.target.value)} value={num100}></input>
             </div>
             <Button data-testid="100-button" onClick={setNow100} className="m-2">d100</Button>
         </Col>
@@ -160,7 +210,7 @@ export function ControlPanel ({total100Value, total20Value, total12Value, total1
                 <div className="input-group-prepend">
                     <span className="input-group-text" id="number20">d20</span>
                 </div>
-                <input id="num20" type="text" placeholder="1" aria-label="number20" aria-describedby="number20" className="form-control"></input>
+                <input id="num20" type="text" placeholder="1" aria-label="number20" aria-describedby="number20" className="form-control" onChange={(event) => setNum20(event.target.value)} value={num20}></input>
             </div>
             <Button data-testid="20-button" onClick={setNow20} className="m-2">d20</Button>
         </Col>
@@ -169,7 +219,7 @@ export function ControlPanel ({total100Value, total20Value, total12Value, total1
                 <div className="input-group-prepend">
                     <span className="input-group-text" id="number12">d12</span>
                 </div>
-                <input id="num12" type="text" placeholder="1" aria-label="number12" aria-describedby="number12" className="form-control"></input>
+                <input id="num12" type="text" placeholder="1" aria-label="number12" aria-describedby="number12" className="form-control" onChange={(event) => setNum12(event.target.value)} value={num12}></input>
             </div>
             <Button data-testid="12-button" onClick={setNow12} className="m-2">d12</Button>
         </Col>
@@ -178,7 +228,7 @@ export function ControlPanel ({total100Value, total20Value, total12Value, total1
                 <div className="input-group-prepend">
                     <span className="input-group-text" id="number10">d10</span>
                 </div>
-                <input id="num10" type="text" placeholder="1" aria-label="number10" aria-describedby="number10" className="form-control"></input>
+                <input id="num10" type="text" placeholder="1" aria-label="number10" aria-describedby="number10" className="form-control" onChange={(event) => setNum10(event.target.value)} value={num10}></input>
             </div>
             <Button data-testid="10-button" onClick={setNow10} className="m-2">d10</Button>
         </Col>
@@ -187,7 +237,7 @@ export function ControlPanel ({total100Value, total20Value, total12Value, total1
                 <div className="input-group-prepend">
                     <span className="input-group-text" id="number8">d8</span>
                 </div>
-                <input id="num8" type="text" placeholder="1" aria-label="number8" aria-describedby="number8" className="form-control"></input>
+                <input id="num8" type="text" placeholder="1" aria-label="number8" aria-describedby="number8" className="form-control" onChange={(event) => setNum8(event.target.value)} value={num8}></input>
             </div>
             <Button data-testid="8-button" onClick={setNow8} className="m-2">d8</Button>
         </Col>
