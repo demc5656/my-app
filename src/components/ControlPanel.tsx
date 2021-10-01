@@ -72,16 +72,16 @@ export function ControlPanel ({total100Value, total20Value, total12Value, total1
             set100(temp100)
             get100(temp100+total100Value)
         }*/
-        const temp = getNumber(num100, 1);
-        let tempTotal = 0;
-        let rollHold =  0;
-        for (let i=0; i<temp; i++) {
-            rollHold = roll(100);
-            tempTotal = tempTotal + rollHold;
+        const tmp100 = getNumber(num100, 1);
+        let tempTotal100 = 0;
+        let rollHold100 =  0;
+        for (let i=0; i<tmp100; i++) {
+            rollHold100 = roll(100);
+            tempTotal100 = tempTotal100 + rollHold100;
         }
-        const temp100 = rollHold;
+        const temp100 = rollHold100;
         set4(temp100)
-        get4(tempTotal+total100Value)
+        get4(tempTotal100+total100Value)
     }
     function setNow20() {
         /*
@@ -92,16 +92,16 @@ export function ControlPanel ({total100Value, total20Value, total12Value, total1
             set20(temp20)
             get20(temp20+total20Value)
         }*/
-        const temp = getNumber(num20, 1);
-        let tempTotal = 0;
-        let rollHold =  0;
-        for (let i=0; i<temp; i++) {
-            rollHold = roll(20);
-            tempTotal = tempTotal + rollHold;
+        const tmp20 = getNumber(num20, 1);
+        let tempTotal20 = 0;
+        let rollHold20 =  0;
+        for (let i=0; i<tmp20; i++) {
+            rollHold20 = roll(20);
+            tempTotal20 = tempTotal20 + rollHold20;
         }
-        const temp20 = rollHold;
+        const temp20 = rollHold20;
         set4(temp20)
-        get4(tempTotal+total20Value)
+        get4(tempTotal20+total20Value)
     }
     function setNow12() {
         /*
@@ -112,16 +112,16 @@ export function ControlPanel ({total100Value, total20Value, total12Value, total1
             set12(temp12)
             get12(temp12+total12Value)
         }*/
-        const temp = getNumber(num12, 1);
-        let tempTotal = 0;
-        let rollHold =  0;
-        for (let i=0; i<temp; i++) {
-            rollHold = roll(12);
-            tempTotal = tempTotal + rollHold;
+        const tmp12 = getNumber(num12, 1);
+        let tempTotal12 = 0;
+        let rollHold12 =  0;
+        for (let i=0; i<tmp12; i++) {
+            rollHold12 = roll(12);
+            tempTotal12 = tempTotal12 + rollHold12;
         }
-        const temp12 = rollHold;
+        const temp12 = rollHold12;
         set4(temp12)
-        get4(tempTotal+total12Value)
+        get4(tempTotal12+total12Value)
     }
     function setNow10() {
         /*
@@ -132,16 +132,16 @@ export function ControlPanel ({total100Value, total20Value, total12Value, total1
             set10(temp10)
             get10(temp10+total10Value)
         }*/
-        const temp = getNumber(num10, 1);
-        let tempTotal = 0;
-        let rollHold =  0;
-        for (let i=0; i<temp; i++) {
-            rollHold = roll(10);
-            tempTotal = tempTotal + rollHold;
+        const tmp10 = getNumber(num10, 1);
+        let tempTotal10 = 0;
+        let rollHold10 =  0;
+        for (let i=0; i<tmp10; i++) {
+            rollHold10 = roll(10);
+            tempTotal10 = tempTotal10 + rollHold10;
         }
-        const temp10 = rollHold;
+        const temp10 = rollHold10;
         set4(temp10)
-        get4(tempTotal+total10Value)
+        get4(tempTotal10+total10Value)
     }
     function setNow8() { /*
         const temp = document.getElementById("num8")?.textContent;
@@ -151,16 +151,16 @@ export function ControlPanel ({total100Value, total20Value, total12Value, total1
             set8(temp8)
             get8(temp8+total8Value)
         }*/
-        const temp = getNumber(num8, 1);
-        let tempTotal = 0;
-        let rollHold =  0;
-        for (let i=0; i<temp; i++) {
-            rollHold = roll(8);
-            tempTotal = tempTotal + rollHold;
+        const tmp8 = getNumber(num8, 1);
+        let tempTotal8 = 0;
+        let rollHold8 =  0;
+        for (let i=0; i<tmp8; i++) {
+            rollHold8 = roll(8);
+            tempTotal8 = tempTotal8 + rollHold8;
         }
-        const temp8 = rollHold;
+        const temp8 = rollHold8;
         set4(temp8)
-        get4(tempTotal+total8Value)
+        get4(tempTotal8+total8Value)
     }
     function setNow6() {
         /*
@@ -171,29 +171,29 @@ export function ControlPanel ({total100Value, total20Value, total12Value, total1
             set6(temp6)
             get6(temp6+total6Value)
         }*/
-        const temp = getNumber(num6, 1);
-        let tempTotal = 0;
-        let rollHold =  0;
-        for (let i=0; i<temp; i++) {
-            rollHold = roll(6);
-            tempTotal = tempTotal + rollHold;
+        const tmp6 = getNumber(num6, 1);
+        let tempTotal6 = 0;
+        let rollHold6 =  0;
+        for (let i=0; i<tmp6; i++) {
+            rollHold6 = roll(6);
+            tempTotal6 = tempTotal6 + rollHold6;
         }
-        const temp6 = rollHold;
+        const temp6 = rollHold6;
         set4(temp6)
-        get4(tempTotal+total6Value)
+        get4(tempTotal6+total6Value)
     }
     function setNow4() {
         //const temp = document.getElementById("num4")?.textContent;
-        const temp = getNumber(num4, 1);
-        let tempTotal = 0;
-        let rollHold =  0;
-        for (let i=0; i<temp; i++) {
-            rollHold = roll(4);
-            tempTotal = tempTotal + rollHold;
+        const tmp4 = getNumber(num4, 1);
+        let tempTotal4 = 0;
+        let rollHold4 =  0;
+        for (let i=0; i<tmp4; i++) {
+            rollHold4 = roll(4);
+            tempTotal4 = tempTotal4 + rollHold4;
         }
-        const temp4 = rollHold;
+        const temp4 = rollHold4;
         set4(temp4)
-        get4(tempTotal+total4Value)
+        get4(tempTotal4+total4Value)
     }
     return <Row>
         <Col>
