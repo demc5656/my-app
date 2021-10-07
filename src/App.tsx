@@ -8,6 +8,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import { Resets } from './components/Resets';
 import { ResetAll } from './components/ResetAll';
 import { TotalViewer } from './components/TotalViewer';
+import { DIYDice } from './components/DIYDice';
 
 /*
 function App() {
@@ -49,6 +50,20 @@ function App(): JSX.Element {
   const [total6, setTotal6] = useState<number>(0);
   const [total4, setTotal4] = useState<number>(0);
 
+  //const [typedDIY, setTypedDIY] = useState<string>("");
+  //const [diy, rollDIY] = useState<number>(0);
+  //const [diyTotal, setDIYTotal] = useState<number>(0);
+
+  function getNumber(value: string|null|undefined, defaultValue: number): number {
+    if (value != null) {
+        const num = parseInt(value, 10);
+        return isNaN(num) ? defaultValue : num;
+    }
+    else {
+        return defaultValue;
+    }
+  }
+
   return (
     /*<div className="App">
       <header className="App-header">
@@ -68,6 +83,7 @@ function App(): JSX.Element {
       <TotalViewer total100Value={total100} total20Value={total20} total12Value={total12} total10Value={total10} total8Value={total8} total6Value={total6} total4Value={total4}></TotalViewer>
       <ResetAll set100={setNow100} set20={setNow20} set12={setNow12} set10={setNow10} set8={setNow8} set6={setNow6} set4={setNow4} get100={setTotal100} get20={setTotal20} get12={setTotal12} get10={setTotal10} get8={setTotal8} get6={setTotal6} get4={setTotal4}></ResetAll>
       </Row>
+      <DIYDice></DIYDice>
     </Container>
   );
 }
