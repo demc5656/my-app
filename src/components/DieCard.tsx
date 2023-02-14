@@ -2,15 +2,15 @@ import { Row, Col, Card, Button} from "react-bootstrap";
 import { roll } from '../utilities/data';
 import { useState } from 'react';
 
-export function DieCard ({faces, rolledDieValue, totalDieValue, modDie, setModDie, setDieValue, setTotalDieValue}:
+export function DieCard ({faces, rolledDieValue, totalDieValue, modDie, setDieValue, setTotalDieValue, setModDie}:
     {
         faces: number,
         rolledDieValue: number,
         totalDieValue: number,
         modDie: string,
-        setModDie: (mod: string) => void,
         setDieValue: (dv: number) => void,
         setTotalDieValue: (dieTotal: number) => void,
+        setModDie: (mod: string) => void
     }): JSX.Element {
         const [diceCount, setDiceCount] = useState<string>("");
         //const [modDie, setModDie] = useState<string>("");
@@ -41,7 +41,9 @@ export function DieCard ({faces, rolledDieValue, totalDieValue, modDie, setModDi
             setTotalDieValue(0)
         }
         return <Card>
-            <Row>{rolledDieValue}</Row>
+            <Row>
+            <h3 className="text-center" data-testid="100">{rolledDieValue}</h3>
+            </Row>
             <Row>
                 <div className="input-group mb-1">
                     <div className="input-group-prepend">
@@ -49,7 +51,9 @@ export function DieCard ({faces, rolledDieValue, totalDieValue, modDie, setModDi
                     </div>
                     <input id={"num"+faces.toString()} type="text" placeholder="1" aria-label={"number"+faces.toString()} aria-describedby={"number"+faces.toString()} className="form-control" onChange={(event) => setDiceCount(event.target.value)} value={diceCount}></input>
                 </div>
-                <Button data-testid={faces.toString()+"-button"} onClick={setRolledValues} className="m-2">d{faces}</Button>
+            </Row>
+            <Row>
+                <div className="text-center"><Button data-testid={faces.toString()+"-button"} onClick={setRolledValues} className="my-2">d{faces}</Button></div>
             </Row>
             <Row>
                 <div className="input-group mb-1">
@@ -61,7 +65,7 @@ export function DieCard ({faces, rolledDieValue, totalDieValue, modDie, setModDi
                 <h3 className="text-center" data-testid={"total-"+faces.toString()}>{totalDieValue+getNumber(modDie,0)}</h3>
             </Row>
             <Row>
-                <Button data-testid={"reset-"+faces.toString()+"-button"} onClick={resetDie} className="m-2 btn-danger">Reset d{faces}</Button>
+            <div className="text-center"><Button data-testid={"reset-"+faces.toString()+"-button"} onClick={resetDie} className="my-2 btn-danger">Reset d{faces}</Button></div>
             </Row>
         </Card>
     }

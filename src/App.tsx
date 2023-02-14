@@ -2,13 +2,14 @@ import React, { useState } from 'react';
 //import logo from './logo.svg';
 import './App.css';
 import { DiceViewer } from './components/DiceViewer';
-import { Row, Container } from 'react-bootstrap';
+import { Row, Container, Col } from 'react-bootstrap';
 import { ControlPanel } from './components/ControlPanel';
 import "bootstrap/dist/css/bootstrap.min.css";
 import { Resets } from './components/Resets';
 import { ResetAll } from './components/ResetAll';
 import { TotalViewer } from './components/TotalViewer';
 import { GrandTotal } from './components/GrandTotal';
+import { DieCard } from './components/DieCard';
 
 /*
 function App() {
@@ -71,9 +72,13 @@ function App(): JSX.Element {
     </div>*/
     <Container>
       <Row>
-      <DiceViewer rolled100Value={now100} rolled20Value={now20} rolled12Value={now12} rolled10Value={now10} rolled8Value={now8} rolled6Value={now6} rolled4Value={now4}></DiceViewer>
-      <ControlPanel total100Value={total100} total20Value={total20} total12Value={total12} total10Value={total10} total8Value={total8} total6Value={total6} total4Value={total4} set100={setNow100} set20={setNow20} set12={setNow12} set10={setNow10} set8={setNow8} set6={setNow6} set4={setNow4} get100={setTotal100} get20={setTotal20} get12={setTotal12} get10={setTotal10} get8={setTotal8} get6={setTotal6} get4={setTotal4}></ControlPanel>
-      <Resets set100={setNow100} set20={setNow20} set12={setNow12} set10={setNow10} set8={setNow8} set6={setNow6} set4={setNow4}></Resets>
+      <Col><DieCard faces={100} rolledDieValue={now100} totalDieValue={total100} modDie={mod100} setDieValue={setNow100} setTotalDieValue={setTotal100} setModDie={setMod100}></DieCard></Col>
+      <Col><DieCard faces={20} rolledDieValue={now20} totalDieValue={total20} modDie={mod20} setDieValue={setNow20} setTotalDieValue={setTotal20} setModDie={setMod20}></DieCard></Col>
+      <Col><DieCard faces={12} rolledDieValue={now12} totalDieValue={total12} modDie={mod12} setDieValue={setNow12} setTotalDieValue={setTotal12} setModDie={setMod12}></DieCard></Col>
+      <Col><DieCard faces={10} rolledDieValue={now10} totalDieValue={total10} modDie={mod10} setDieValue={setNow10} setTotalDieValue={setTotal10} setModDie={setMod10}></DieCard></Col>
+      <Col><DieCard faces={8} rolledDieValue={now8} totalDieValue={total8} modDie={mod8} setDieValue={setNow8} setTotalDieValue={setTotal8} setModDie={setMod8}></DieCard></Col>
+      <Col><DieCard faces={6} rolledDieValue={now6} totalDieValue={total6} modDie={mod6} setDieValue={setNow6} setTotalDieValue={setTotal6} setModDie={setMod6}></DieCard></Col>
+      <Col><DieCard faces={4} rolledDieValue={now4} totalDieValue={total6} modDie={mod4} setDieValue={setNow4} setTotalDieValue={setTotal4} setModDie={setMod4}></DieCard></Col>
       <GrandTotal total100Value={total100} total20Value={total20} total12Value={total12} total10Value={total10} total8Value={total8} total6Value={total6} total4Value={total4} mod100={mod100} mod20={mod20} mod12={mod12} mod10={mod10} mod8={mod8} mod6={mod6} mod4={mod4}></GrandTotal>
       <ResetAll set100={setNow100} set20={setNow20} set12={setNow12} set10={setNow10} set8={setNow8} set6={setNow6} set4={setNow4} get100={setTotal100} get20={setTotal20} get12={setTotal12} get10={setTotal10} get8={setTotal8} get6={setTotal6} get4={setTotal4}></ResetAll>
       </Row>
