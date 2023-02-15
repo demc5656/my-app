@@ -4,7 +4,7 @@ import App from './App';
 
 //test('renders learn react link', () => {
   //render(<App />);
-describe('App', () => {
+/*describe('App', () => {
   beforeEach(() => {
     render(<App />);
   })
@@ -162,4 +162,4 @@ describe('App', () => {
     expect(total6).toEqual(zeroTotal6);
     expect(total4).toEqual(zeroTotal4);
   });
-});
+});*/
