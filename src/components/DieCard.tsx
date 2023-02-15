@@ -69,3 +69,4 @@ export function DieCard ({faces, rolledDieValue, totalDieValue, modDie, setDieVa
             </Row>
         </Card>
     }
+    
