@@ -40,6 +40,6 @@ export function GrandTotal ({total100Value, total20Value, total12Value, total10V
     }
 
     return <Row>
-        <h1 className="text-center my-2" data-testid="total-total">{temp+getNumber(mod100,0)+getNumber(mod20,0)+getNumber(mod12,0)+getNumber(mod10,0)+getNumber(mod8,0)+getNumber(mod6,0)+getNumber(mod4,0)}</h1>
+        <h1 className="text-center my-3" data-testid="total-total">{temp+getNumber(mod100,0)+getNumber(mod20,0)+getNumber(mod12,0)+getNumber(mod10,0)+getNumber(mod8,0)+getNumber(mod6,0)+getNumber(mod4,0)}</h1>
     </Row>
 }

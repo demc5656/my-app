@@ -70,8 +70,9 @@ function App(): JSX.Element {
       </header>
       
     </div>*/
-    <Container>
-      <Row>
+    <body className="bg">
+      <h1 className="text-center rollerTitle m-3">Dice Roller</h1>
+      <Row className="m-3">
       <Col><DieCard faces={100} rolledDieValue={now100} totalDieValue={total100} modDie={mod100} setDieValue={setNow100} setTotalDieValue={setTotal100} setModDie={setMod100}></DieCard></Col>
       <Col><DieCard faces={20} rolledDieValue={now20} totalDieValue={total20} modDie={mod20} setDieValue={setNow20} setTotalDieValue={setTotal20} setModDie={setMod20}></DieCard></Col>
       <Col><DieCard faces={12} rolledDieValue={now12} totalDieValue={total12} modDie={mod12} setDieValue={setNow12} setTotalDieValue={setTotal12} setModDie={setMod12}></DieCard></Col>
@@ -79,10 +80,12 @@ function App(): JSX.Element {
       <Col><DieCard faces={8} rolledDieValue={now8} totalDieValue={total8} modDie={mod8} setDieValue={setNow8} setTotalDieValue={setTotal8} setModDie={setMod8}></DieCard></Col>
       <Col><DieCard faces={6} rolledDieValue={now6} totalDieValue={total6} modDie={mod6} setDieValue={setNow6} setTotalDieValue={setTotal6} setModDie={setMod6}></DieCard></Col>
       <Col><DieCard faces={4} rolledDieValue={now4} totalDieValue={total4} modDie={mod4} setDieValue={setNow4} setTotalDieValue={setTotal4} setModDie={setMod4}></DieCard></Col>
-      <GrandTotal total100Value={total100} total20Value={total20} total12Value={total12} total10Value={total10} total8Value={total8} total6Value={total6} total4Value={total4} mod100={mod100} mod20={mod20} mod12={mod12} mod10={mod10} mod8={mod8} mod6={mod6} mod4={mod4}></GrandTotal>
-      <ResetAll set100={setNow100} set20={setNow20} set12={setNow12} set10={setNow10} set8={setNow8} set6={setNow6} set4={setNow4} get100={setTotal100} get20={setTotal20} get12={setTotal12} get10={setTotal10} get8={setTotal8} get6={setTotal6} get4={setTotal4}></ResetAll>
       </Row>
-    </Container>
+      <Container style={{color: 'white'}}>
+        <GrandTotal total100Value={total100} total20Value={total20} total12Value={total12} total10Value={total10} total8Value={total8} total6Value={total6} total4Value={total4} mod100={mod100} mod20={mod20} mod12={mod12} mod10={mod10} mod8={mod8} mod6={mod6} mod4={mod4}></GrandTotal>
+        <ResetAll set100={setNow100} set20={setNow20} set12={setNow12} set10={setNow10} set8={setNow8} set6={setNow6} set4={setNow4} get100={setTotal100} get20={setTotal20} get12={setTotal12} get10={setTotal10} get8={setTotal8} get6={setTotal6} get4={setTotal4}></ResetAll>
+      </Container>
+    </body>
   );
 }
 

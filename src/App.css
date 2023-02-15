@@ -36,3 +36,13 @@
     transform: rotate(360deg);
   }
 }
+
+.bg {
+  background-color: #a386c4;
+  background-image: url("BestVibes.png");
+}
+
+.rollerTitle {
+  color: white;
+  background-image: url("BestVibes.png");
+}
