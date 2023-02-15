@@ -59,7 +59,7 @@ export function ResetAll ({set100, set20, set12, set10, set8, set6, set4, get100
         get4(0)
     }
     return <Row>
-        <Button className="btn-danger" data-testid="reset-all-button" onClick={() => {setNow100(); setNow20(); setNow12(); setNow10(); setNow8(); setNow6(); setNow4(); setTotal100(); setTotal20(); setTotal12(); setTotal10(); setTotal8(); setTotal6(); setTotal4();}}>Reset All</Button>
+        <Button className="btn-danger border-white" data-testid="reset-all-button" onClick={() => {setNow100(); setNow20(); setNow12(); setNow10(); setNow8(); setNow6(); setNow4(); setTotal100(); setTotal20(); setTotal12(); setTotal10(); setTotal8(); setTotal6(); setTotal4();}}>Reset All</Button>
     </Row>
 }
 //<Col><Button data-testid="reset-total-button" onClick={() => {setTotal100(); setTotal20(); setTotal12(); setTotal10(); setTotal8(); setTotal6(); setTotal4();}} className="m-2">Reset All</Button></Col>

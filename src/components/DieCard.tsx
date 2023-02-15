@@ -42,7 +42,7 @@ export function DieCard ({faces, rolledDieValue, totalDieValue, modDie, setDieVa
         }
         return <Card style={{backgroundImage: 'url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRdsUgjZ5GId2b-LoPvRRM80CK_Mm9FcnIQ3Q&usqp=CAU")', color: "white"}}>
             <Row>
-            <h3 className="text-center" data-testid="100">{rolledDieValue}</h3>
+            <h3 className="text-center my-2" data-testid="100">{rolledDieValue}</h3>
             </Row>
             <Row>
                 <div className="input-group mb-1">
@@ -65,7 +65,7 @@ export function DieCard ({faces, rolledDieValue, totalDieValue, modDie, setDieVa
                 <h3 className="text-center" data-testid={"total-"+faces.toString()}>{totalDieValue+getNumber(modDie,0)}</h3>
             </Row>
             <Row>
-            <div className="text-center"><Button data-testid={"reset-"+faces.toString()+"-button"} onClick={resetDie} className="my-2 btn-danger">Reset d{faces}</Button></div>
+            <div className="text-center"><Button data-testid={"reset-"+faces.toString()+"-button"} onClick={resetDie} className="my-2 btn-danger border-white">Reset d{faces}</Button></div>
             </Row>
         </Card>
     }
