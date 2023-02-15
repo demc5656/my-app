@@ -13,8 +13,6 @@ export function DieCard ({faces, rolledDieValue, totalDieValue, modDie, setDieVa
         setModDie: (mod: string) => void
     }): JSX.Element {
         const [diceCount, setDiceCount] = useState<string>("");
-        //const [modDie, setModDie] = useState<string>("");
-
         function getNumber(value: string|null|undefined, defaultValue: number): number {
             if (value != null) {
                 const num = parseInt(value, 10);
