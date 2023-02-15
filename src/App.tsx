@@ -1,13 +1,13 @@
 import React, { useState } from 'react';
 //import logo from './logo.svg';
 import './App.css';
-import { DiceViewer } from './components/DiceViewer';
+//import { DiceViewer } from './components/DiceViewer';
 import { Row, Container, Col } from 'react-bootstrap';
-import { ControlPanel } from './components/ControlPanel';
+//import { ControlPanel } from './components/ControlPanel';
 import "bootstrap/dist/css/bootstrap.min.css";
-import { Resets } from './components/Resets';
+//import { Resets } from './components/Resets';
 import { ResetAll } from './components/ResetAll';
-import { TotalViewer } from './components/TotalViewer';
+//import { TotalViewer } from './components/TotalViewer';
 import { GrandTotal } from './components/GrandTotal';
 import { DieCard } from './components/DieCard';
 

@@ -1,5 +1,5 @@
-import { Row, Col} from "react-bootstrap";
-import { useState } from "react";
+import { Row } from "react-bootstrap";
+//import { useState } from "react";
 
 
 export function GrandTotal ({total100Value, total20Value, total12Value, total10Value, total8Value, total6Value, total4Value, mod100, mod20, mod12, mod10, mod8, mod6, mod4}: {

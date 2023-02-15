@@ -1,4 +1,4 @@
-import { Row, Col, Card, Button} from "react-bootstrap";
+import { Row, Card, Button} from "react-bootstrap";
 import { roll } from '../utilities/data';
 import { useState } from 'react';
 
